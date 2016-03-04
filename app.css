@@ -11,3 +11,76 @@ body {
   font-size: 16px;
   font-family: sans-serif;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+li {
+  display: inline;;
+}
+
+header {
+  background-image: url("images/header_wave.jpg");
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+}
+
+.header-navbar {
+  color: #2e2e2e;
+  font-weight: bolder;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.header-navbar__left {
+  flex-grow: 1;
+}
+
+.header-navbar__logo {
+  border-radius: 50%;
+  border: 6px solid #202020;
+  vertical-align: middle;
+}
+
+.header-navbar__title {
+  display: none;
+}
+
+.header-navbar__button {
+  margin-left: 2em;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem;
+  color: #ffffff;
+  text-shadow: 0.08rem 0.08rem #4f4f4f;
+}
+
+.header-title {
+  font-size: 4rem;
+}
+
+.header-subtitle {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .header-navbar {
+    flex-direction: row;
+  }
+  .header-navbar__title {
+    display: inline;
+  }
+}
