@@ -31,7 +31,6 @@ header {
 }
 
 .header-navbar {
-  color: #2e2e2e;
   font-weight: bolder;
 
   display: flex;
@@ -45,6 +44,12 @@ header {
 
 .header-navbar__left {
   flex-grow: 1;
+  color: #2e2e2e;
+}
+
+.header-navbar__right {
+  color: #609f70;
+  text-shadow: 0.03rem 0.03rem #4f4f4f;
 }
 
 .header-navbar__logo {
@@ -63,24 +68,40 @@ header {
 
 .hero {
   text-align: center;
-  padding: 4rem;
   color: #ffffff;
   text-shadow: 0.08rem 0.08rem #4f4f4f;
 }
 
 .header-title {
-  font-size: 4rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .header-subtitle {
   font-size: 0.7rem;
+  padding: 0 0 1rem;
+  margin: 0;
 }
 
 @media screen and (min-width: 40rem) {
+
   .header-navbar {
     flex-direction: row;
   }
+
   .header-navbar__title {
     display: inline;
+    background: #ffffff;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0.1rem 0.8rem 0 0.8rem;
+  }
+
+  .header-title {
+    font-size: 4rem;
+  }
+
+  .hero {
+    padding: 6rem;
   }
 }
