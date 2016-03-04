@@ -23,6 +23,19 @@ li {
   display: inline;;
 }
 
+.container {
+  width: 100%;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*////////////////////////////////////////////////////*/
+/*                       Header                       */
 header {
   background-image: url("images/header_wave.jpg");
   background-size: cover;
@@ -36,8 +49,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 90vw;
-  margin: auto;
   flex-direction: row;
 }
 
@@ -87,6 +98,55 @@ header {
   margin: 0;
 }
 
+/*////////////////////////////////////////////////////*/
+/*                       Main                         */
+
+.content {
+  padding: 2rem;
+}
+
+.content-title {
+  font-size: 4rem;
+  margin: 0;
+  text-transform: uppercase;
+  color: #4C4C69;
+}
+
+.content-title__caption {
+  font-size: 0.8rem;
+}
+
+.content-subtitle__avatar {
+  border-radius: 50%;
+}
+
+/*////////////////////////////////////////////////////*/
+/*                       Sidebar                      */
+.sidebar {
+  padding: 2rem;
+}
+
+.sidebar-profile {
+  text-align: center;
+}
+
+.sidebar-avatar {
+  border-radius: 50%;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+}
+
+/*////////////////////////////////////////////////////*/
+/*                       Footer                       */
+
+
+
+/*///////////////*/
+/*  Media        */
+/*       Queries */
+/*///////////////*/
 @media screen and (max-width: 40rem) {
 
   .header-navbar {
@@ -95,7 +155,7 @@ header {
 
   .header-navbar__title {
     display: none;
-    }
+  }
 
   .header-title {
     font-size: 2rem;
