@@ -38,18 +38,12 @@ header {
   align-items: center;
   width: 90vw;
   margin: auto;
-  flex-direction: column;
-  flex-direction: column-reverse;
+  flex-direction: row;
 }
 
 .header-navbar__left {
   flex-grow: 1;
   color: #2e2e2e;
-}
-
-.header-navbar__right {
-  color: #609f70;
-  text-shadow: 0.03rem 0.03rem #4f4f4f;
 }
 
 .header-navbar__logo {
@@ -59,7 +53,17 @@ header {
 }
 
 .header-navbar__title {
-  display: none;
+  display: inline;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.4);
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0.1rem 3.5rem 0 1.5rem;
+}
+
+.header-navbar__right {
+  color: #3b80ac;
+  text-shadow: 0.05rem 0.05rem rgba(0, 0, 0, 0.9);
 }
 
 .header-navbar__button {
@@ -70,11 +74,11 @@ header {
   text-align: center;
   color: #ffffff;
   text-shadow: 0.08rem 0.08rem #4f4f4f;
+  padding: 6rem;
 }
 
 .header-title {
-  font-size: 2rem;
-  margin: 0;
+  font-size: 4rem;
 }
 
 .header-subtitle {
@@ -83,25 +87,22 @@ header {
   margin: 0;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (max-width: 40rem) {
 
   .header-navbar {
-    flex-direction: row;
+    flex-direction: column-reverse;
   }
 
   .header-navbar__title {
-    display: inline;
-    background: #ffffff;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    padding: 0.1rem 0.8rem 0 0.8rem;
-  }
+    display: none;
+    }
 
   .header-title {
-    font-size: 4rem;
+    font-size: 2rem;
+    margin: 0;
   }
 
   .hero {
-    padding: 6rem;
+    padding: 0;
   }
 }
