@@ -10,6 +10,7 @@ html, body {
   margin: 0;
   /*font-size: calc(1px + 3vmin);*/
   font-family: sans-serif;
+  color: #2d2d2d;
 }
 
 ul {
@@ -39,7 +40,7 @@ li {
 }
 
 .link-blue {
-  color: #586274;
+  color: #6b7fa3;
 }
 
 /*////////////////////////////////////////////////////*/
@@ -162,6 +163,7 @@ header {
 .sidebar {
   padding: 2rem;
   width: 30%;
+  font-size: 0.8rem;
 }
 
 .sidebar-profile {
@@ -182,7 +184,10 @@ header {
 .sidebar-profile__link {
   margin: 0;
   padding: 0px 0.5rem;
-  font-size: 0.8rem;
+}
+
+.sidebar-heading {
+  text-transform: uppercase;
 }
 
 /*////////////////////////////////////////////////////*/
