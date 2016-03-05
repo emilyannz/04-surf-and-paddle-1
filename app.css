@@ -6,9 +6,9 @@
   box-sizing: inherit;
 }
 
-body {
+html, body {
   margin: 0;
-  font-size: 16px;
+  /*font-size: calc(1px + 3vmin);*/
   font-family: sans-serif;
 }
 
@@ -31,7 +31,15 @@ li {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
+
+.heading-blue {
+  color:#0f60aa;
+}
+
+.link-blue {
+  color: #586274;
 }
 
 /*////////////////////////////////////////////////////*/
@@ -50,6 +58,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+
 }
 
 .header-navbar__left {
@@ -70,6 +79,7 @@ header {
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   padding: 0.1rem 3.5rem 0 1.5rem;
+  font-size: 0.8rem;
 }
 
 .header-navbar__right {
@@ -78,18 +88,19 @@ header {
 }
 
 .header-navbar__button {
-  margin-left: 2em;
+  margin-left: 2rem;
+  font-size: 0.8rem;
 }
 
 .hero {
   text-align: center;
   color: #ffffff;
   text-shadow: 0.08rem 0.08rem #4f4f4f;
-  padding: 6rem;
+  padding: 5rem;
 }
 
 .header-title {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .header-subtitle {
@@ -103,16 +114,19 @@ header {
 
 .content {
   padding: 2rem;
+  font-size: 0.9srem;
+  width: 70%;
 }
 
+
 .content-title {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
   text-transform: uppercase;
   color: #4C4C69;
 }
 
-.content-title__caption {
+.content-subtitle__caption {
   font-size: 0.8rem;
 }
 
@@ -120,10 +134,34 @@ header {
   border-radius: 50%;
 }
 
+.content-pullquote {
+  border-left: solid 1px grey;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: 1rem;
+}
+
+.content-links {
+  display: flex;
+}
+
+.content-link__button {
+  background: #9ca9bb;
+  color: #e7e7e7;
+  width: 8rem;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
 /*////////////////////////////////////////////////////*/
 /*                       Sidebar                      */
 .sidebar {
   padding: 2rem;
+  width: 30%;
 }
 
 .sidebar-profile {
@@ -134,13 +172,40 @@ header {
   border-radius: 50%;
 }
 
-.sidebar-title {
+.sidebar-profile__name {
+  margin: 0;
   font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: normal;`
+}
+
+.sidebar-profile__link {
+  margin: 0;
+  padding: 0px 0.5rem;
+  font-size: 0.8rem;
 }
 
 /*////////////////////////////////////////////////////*/
 /*                       Footer                       */
+.footer-content__title {
+  text-align: center;
+}
 
+.footer-content__links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content__links---image {
+  flex-grow: 1;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  align-items: center;
+}
 
 
 /*///////////////*/
