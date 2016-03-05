@@ -11,6 +11,7 @@ html, body {
   /*font-size: calc(1px + 3vmin);*/
   font-family: sans-serif;
   color: #2d2d2d;
+  font-size: 1em;
 }
 
 ul {
@@ -26,7 +27,7 @@ li {
 
 .container {
   width: 100%;
-  max-width: 65rem;
+  max-width: 65em;
   margin: auto;
 }
 
@@ -77,36 +78,36 @@ header {
   display: inline;
   background: #ffffff;
   background: rgba(255, 255, 255, 0.4);
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  padding: 0.1rem 3.5rem 0 1.5rem;
-  font-size: 0.8rem;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding: 0.1em 3.5em 0 1.5em;
+  font-size: 0.8em;
 }
 
 .header-navbar__right {
   color: #3b80ac;
-  text-shadow: 0.05rem 0.05rem rgba(0, 0, 0, 0.9);
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.9);
 }
 
 .header-navbar__button {
-  margin-left: 2rem;
-  font-size: 0.8rem;
+  margin-left: 2em;
+  font-size: 0.8em;
 }
 
 .hero {
   text-align: center;
   color: #ffffff;
-  text-shadow: 0.08rem 0.08rem #4f4f4f;
-  padding: 5rem;
+  text-shadow: 0.08em 0.08em #4f4f4f;
+  padding: 5em;
 }
 
 .header-title {
-  font-size: 5rem;
+  font-size: 5em;
 }
 
 .header-subtitle {
-  font-size: 0.7rem;
-  padding: 0 0 1rem;
+  font-size: 0.7em;
+  padding: 0 0 1em;
   margin: 0;
 }
 
@@ -114,21 +115,22 @@ header {
 /*                       Main                         */
 
 .content {
-  padding: 2rem;
-  font-size: 0.9srem;
+  padding: 2em;
+  font-size: 0.9em;
   width: 70%;
 }
 
 
 .content-title {
-  font-size: 2rem;
+  font-size: 4em;
   margin: 0;
   text-transform: uppercase;
   color: #4C4C69;
+  font-weight: normal;;
 }
 
 .content-subtitle__caption {
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .content-subtitle__avatar {
@@ -137,10 +139,10 @@ header {
 
 .content-pullquote {
   border-left: solid 1px grey;
-  padding: 1rem;
+  padding: 1em;
   text-transform: uppercase;
   font-weight: normal;
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .content-links {
@@ -150,10 +152,10 @@ header {
 .content-link__button {
   background: #9ca9bb;
   color: #e7e7e7;
-  width: 8rem;
-  margin: 0.5rem;
-  padding: 0.3rem;
-  font-size: 0.8rem;
+  width: 8em;
+  margin: 0.5em;
+  padding: 0.3em;
+  font-size: 0.8em;
   text-align: center;
 }
 
@@ -161,13 +163,14 @@ header {
 /*////////////////////////////////////////////////////*/
 /*                       Sidebar                      */
 .sidebar {
-  padding: 2rem;
+  padding: 2em;
   width: 30%;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .sidebar-profile {
   text-align: center;
+  margin: 0 0 4em;
 }
 
 .sidebar-avatar {
@@ -175,21 +178,34 @@ header {
 }
 
 .sidebar-profile__name {
-  margin: 0;
-  font-size: 1rem;
+  margin: 0.6em;
+  font-size: 1em;
   text-transform: uppercase;
-  font-weight: normal;`
+  font-weight: normal;
 }
 
 .sidebar-profile__link {
   margin: 0;
-  padding: 0px 0.5rem;
+  padding: 0 0.5em;
 }
 
-.sidebar-heading {
+.sidebard-advertisement__image {
+  width: 100%;
+}
+
+.sidebar-advertisement__link {
+  text-align: right;
+  text-decoration: underline;
+}
+
+.sidebar-article__heading {
   text-transform: uppercase;
+  margin-bottom: -0.5em;
 }
 
+.sidebar-article__paragraph {
+  margin-top: 0;
+}
 /*////////////////////////////////////////////////////*/
 /*                       Footer                       */
 .footer-content__title {
@@ -208,7 +224,7 @@ header {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 3rem;
+  margin: 0 3em;
   align-items: center;
 }
 
@@ -217,7 +233,7 @@ header {
 /*  Media        */
 /*       Queries */
 /*///////////////*/
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 40em) {
 
   .header-navbar {
     flex-direction: column-reverse;
@@ -228,7 +244,7 @@ header {
   }
 
   .header-title {
-    font-size: 2rem;
+    font-size: 2em;
     margin: 0;
   }
 
