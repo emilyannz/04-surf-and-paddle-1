@@ -175,7 +175,7 @@ header {
 .sidebar {
   padding: 2em;
   font-size: 0.8em;
-  max-width: 24rem;
+  max-width: 20rem;
   flex-grow: 1;
 }
 
@@ -211,7 +211,6 @@ header {
 
 .sidebar-article__heading {
   text-transform: uppercase;
-  margin-bottom: -0.5em;
   font-size: 1.2em;
 }
 
@@ -247,6 +246,18 @@ header {
 .footer-content__post {
   flex-grow: 1;
   position: relative;
+}
+
+ .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0C2142;
+  opacity: .8;
+}
+
+.footer-content__post:hover .overlay {
+  opacity: 0;
 }
 
 .footer-content__post--name {
@@ -311,7 +322,7 @@ header {
   }
 
   .hero {
-    padding: 8em 5em;
+    padding: 2em 3em;
   }
 
   .content-title {
@@ -330,9 +341,13 @@ header {
     font-size: .8em;
   }
 
+  .sidebar-article {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 65rem) {
+
   .footer-nav {
     flex-direction: column-reverse;
   }
