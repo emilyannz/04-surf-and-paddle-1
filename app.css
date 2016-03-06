@@ -22,7 +22,11 @@ ul {
 }
 
 li {
-  display: inline;;
+  display: inline;
+}
+
+.fake-link {
+  cursor: pointer;
 }
 
 .container {
@@ -237,7 +241,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: -0.3em;
   color: silver;
   text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.9);
 
@@ -246,6 +249,7 @@ header {
 .footer-content__post {
   flex-grow: 1;
   position: relative;
+  margin-bottom: -0.3rem;
 }
 
  .overlay {
@@ -299,7 +303,7 @@ header {
 
 .footer-nav__link {
   padding: 0 1em;
-  border-left: 1px solid lightgrey;
+  border-right: .1em solid lightgrey;
 }
 
 /*///////////////*/
