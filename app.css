@@ -26,14 +26,12 @@ li {
 }
 
 .container {
-  width: 100%;
   max-width: 65em;
   margin: auto;
 }
 
 .row {
   display: flex;
-  align-items: center;
 }
 
 .heading-blue {
@@ -61,7 +59,7 @@ header {
 }
 
 .header-navbar__left {
-  color: #2e2e2e;
+
 }
 
 .header-navbar__logo {
@@ -73,16 +71,17 @@ header {
 .header-navbar__title {
   display: inline;
   background: #ffffff;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.8);
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
   padding: 0.1em 3.5em 0 1.5em;
   font-size: 0.8em;
-  color: #1d334e;
+  color: #83C9F7;
+  text-shadow: 0.02em 0.02em rgba(0, 0, 0, 0.9);
 }
 
 .header-navbar__right {
-  color: #3b80ac;
+  color: #83C9F7;
   text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.9);
 }
 
@@ -110,19 +109,23 @@ header {
 
 /*////////////////////////////////////////////////////*/
 /*                       Main                         */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .content {
   padding: 2em;
-  font-size: 0.9em;
-  width: 70%;
+  flex-basis: calc(100% / 1.6);
+  flex-grow: 1;
 }
-
 
 .content-title {
   font-size: 4em;
   margin: 0;
   text-transform: uppercase;
-  color: ##1d334e;
+  color: #1d334e;
   font-weight: bold;
 }
 
@@ -149,6 +152,7 @@ header {
 
 .content-links {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .content-link__button {
@@ -158,6 +162,7 @@ header {
   padding: 0 2em;
   font-size: 0.8em;
   text-align: center;
+  flex-grow: 1;
 }
 
 .content-link__button--text {
@@ -169,8 +174,9 @@ header {
 /*                       Sidebar                      */
 .sidebar {
   padding: 2em;
-  width: 30%;
   font-size: 0.8em;
+  max-width: 24rem;
+  flex-grow: 1;
 }
 
 .sidebar-profile {
@@ -224,15 +230,18 @@ header {
   font-size: 4em;
   margin: 0.4em;
   text-transform: uppercase;
-  color: ##1d334e;
+  color: #1d334e;
   font-weight: bold;
 }
 
 .footer-content__links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: -0.2em;
+  margin-bottom: -0.3em;
   color: silver;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.9);
+
 }
 
 .footer-content__post {
@@ -250,6 +259,7 @@ header {
 
 .footer-content__post--image {
   width: 100%;
+  max-height: 15em;
 }
 
 .footer-nav {
@@ -286,5 +296,17 @@ header {
 
   .hero {
     padding: 8em 5em;
+  }
+
+  .content-title {
+    font-size: 2em;
+  }
+
+  .sidebar {
+    font-size: 1em;
+  }
+
+  .footer-content__title {
+    font-size: 2em;
   }
 }
